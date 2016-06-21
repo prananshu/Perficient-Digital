@@ -1,0 +1,12 @@
+#base=js
+vendor/iframeResizer.min.js
+vendor/jquery.cookie.js
+vendor/slick.min.js
+vendor/overlay-classes.js
+vendor/overlay.js
+vendor/flexibility.js
+vendor/tether.min.js
+vendor/bootstrap.min.js
+perficient-app.js
+plugins.js
+main.js

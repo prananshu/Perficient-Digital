@@ -1,0 +1,20 @@
+div.query-block.CoveoResult {
+  border-bottom: 0;
+  margin: 0;
+  position: static; }
+
+.search-overlay .overlay-container .search-container .input-group {
+  display: table !important; }
+
+.search-container .CoveoSearchButton {
+  background-color: #cc1f20;
+  border: 1px solid #cc1f20;
+  font-family: "Open Sans", sans-serif; }
+
+.search-container .CoveoSearchButton:hover {
+  background-color: #cc1f20;
+  border: 1px solid #cc1f20; }
+
+.search-container .CoveoSearchInterface .coveo-results-section .coveo-facet-column,
+.search-container .CoveoSearchInterface .coveo-results-section .coveo-results-column .coveo-results-header {
+  background-color: #f4f3f0; }

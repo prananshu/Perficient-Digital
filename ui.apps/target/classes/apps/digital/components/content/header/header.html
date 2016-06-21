@@ -1,0 +1,187 @@
+<header role="banner" data-sly-use.header="com.perficient.adobe.digital.core.sightly.components.PDHeader">
+	<div class="search-icon" id="search-trigger-overlay">
+		<span></span>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="hidden-md-up mobile-logo">
+				<a href="${header.logoUrl}">
+					<!-- <img src="../../../../../etc/designs/digital/clientlib/img/perficient-logo.png"></a> -->
+					<img src="${header.logoPath}" alt="${header.logoAltText}"></a>
+			</div>
+			<button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#mobilenav">
+				<div class="menu-icon">
+					<div class="center-bar"></div>
+				</div>
+			</button>
+			<nav class="navbar navbar-full">
+				<div class="collapse navbar-toggleable-sm" id="mobilenav">
+
+					<div class="nav-block">
+						<div class="main-nav">
+							<ul>
+								<li class="nav-item hidden-sm-down">
+									<a href="${header.logoUrl}" class="logo">
+										<img src="${header.logoPath}" alt="${header.logoAltText}">
+									</a>
+								</li>
+								<li data-sly-use.templ="navSection.html"
+									data-sly-call="${templ.navSection @ sectionLabel=header.section1Label, sectionURL=header.section1URL, sectionLinks=header.nav1Items}" data-sly-unwrap>
+								</li>
+								<!-- <li class="nav-item">
+									<a href="#" class="nav-link dropdown-toggle" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Services
+									</a>
+									<div class="dropdown-menu mega-menu" aria-labelledby="servicesMenu">
+										<div class="menu-title">
+											<a href="#">Services</a>
+										</div>
+										<div class="menu-block">
+											<ul class="list-unstyled">
+												<li class="mega-menu-item"><a href="">Adobe</a></li>
+												<li class="mega-menu-item"><a href="">Cloudera</a></li>
+												<li class="mega-menu-item"><a href="">EMC</a></li>
+												<li class="mega-menu-item"><a href="">Google</a></li>
+												<li class="mega-menu-item"><a href="">Hotorworks</a></li>
+												<li class="mega-menu-item"><a href="">IBM</a></li>
+												<li class="mega-menu-item"><a href="">Informatica</a></li>
+												<li class="mega-menu-item"><a href="">Insight</a></li>
+												<li class="mega-menu-item"><a href="">Lifeway</a></li>
+												<li class="mega-menu-item"><a href="">Magneto</a></li>
+												<li class="mega-menu-item"><a href="">Microsoft</a></li>
+												<li class="mega-menu-item"><a href="">Oracle</a></li>
+												<li class="mega-menu-item"><a href="">Pegasystems</a></li>
+												<li class="mega-menu-item"><a href="">QA</a></li>
+												<li class="mega-menu-item"><a href="">Salesforce</a></li>
+												<li class="mega-menu-item"><a href="">Sitecore</a></li>
+												<li class="mega-menu-item"><a href="">Splunk</a></li>
+												<li class="mega-menu-item"><a href="">TIBCO</a></li>
+												<li class="mega-menu-item"><a href="">Vortex</a></li>
+												<li class="mega-menu-item"><a href="">Adobe</a></li>
+												<li class="mega-menu-item"><a href="">IBM</a></li>
+												<li class="mega-menu-item"><a href="">Microsoft</a></li>
+												<li class="mega-menu-item"><a href="">Oracle</a></li>
+												<li class="mega-menu-item"><a href="">Salesforce</a></li>
+												<li class="mega-menu-item"><a href="">Cloudera</a></li>
+												<li class="mega-menu-item"><a href="">Google</a></li>
+												<li class="mega-menu-item"><a href="">Hortonworks</a></li>
+												<li class="mega-menu-item"><a href="">Informatica</a></li>
+												<li class="mega-menu-item"><a href="">Insite</a></li>
+												<li class="mega-menu-item"><a href="">Liferay</a></li>
+												<li class="mega-menu-item"><a href="">Magento</a></li>
+												<li class="mega-menu-item"><a href="">Pegasystems</a></li>
+												<li class="mega-menu-item"><a href="">Red Hat</a></li>
+												<li class="mega-menu-item"><a href="">Sitecore</a></li>
+												<li class="mega-menu-item"><a href="">Splunk</a></li>
+												<li class="mega-menu-item"><a href="">TIBCO</a></li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+								<li class="nav-item">
+									<a href="#" class="nav-link dropdown-toggle" id="industriesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+									<div class="dropdown-menu mega-menu" aria-labelledby="industriesMenu">
+										<div class="menu-title">
+											<a href="#">Industries</a>
+										</div>
+										<div class="menu-block">
+											<ul class="list-unstyled">
+												<li class="mega-menu-item"><a href="">Automotive</a></li>
+												<li class="mega-menu-item"><a href="">Retail</a></li>
+												<li class="mega-menu-item"><a href="">Electronics</a></li>
+												<li class="mega-menu-item"><a href="">Energy</a></li>
+												<li class="mega-menu-item"><a href="">Financial Services</a></li>
+												<li class="mega-menu-item"><a href="">Healthcare</a></li>
+												<li class="mega-menu-item"><a href="">Life Sciences</a></li>
+												<li class="mega-menu-item"><a href="">Manafacturing</a></li>
+												<li class="mega-menu-item"><a href="">Telecommunications</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a  href="#" class="nav-link dropdown-toggle" id="partnerMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partners</a>
+									<div class="dropdown-menu mega-menu" aria-labelledby="partnerMenu">
+										<div class="menu-title">
+											<a href="#">Partner</a>
+										</div>
+										<div class="menu-block">
+											<ul class="list-unstyled">
+												<li class="mega-menu-item"><a href="#">IBM</a></li>
+												<li class="mega-menu-item"><a href="">Mircosoft</a></li>
+												<li class="mega-menu-item"><a href="">Oracle</a></li>
+												<li class="mega-menu-item"><a href="">Salesforce</a></li>
+												<li class="mega-menu-item"><a href="">Adobe</a></li>
+												<li class="mega-menu-item"><a href="">Coudera</a></li>
+												<li class="mega-menu-item"><a href="">EMC</a></li>
+												<li class="mega-menu-item"><a href="">Google</a></li>
+												<li class="mega-menu-item"><a href="">Horton Works</a></li>
+												<li class="mega-menu-item"><a href="">Informatic</a></li>
+												<li class="mega-menu-item"><a href="">Insight</a></li>
+												<li class="mega-menu-item"><a href="">Liferay</a></li>
+												<li class="mega-menu-item"><a href="">Pegasystems</a></li>
+												<li class="mega-menu-item"><a href="">Magento</a></li>
+												<li class="mega-menu-item"><a href="">Sitecore</a></li>
+												<li class="mega-menu-item"><a href="">Splunk</a></li>
+												<li class="mega-menu-item"><a href="">TIBCO</a></li>
+												<li class="mega-menu-item"><a href="">Vertex</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link dropdown-toggle" id="workMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+									<div class="dropdown-menu mega-menu" aria-labelledby="workMenu">
+										<div class="menu-title">
+											<a href="#">Work</a>
+										</div>
+										<div class="menu-block">
+											<ul class="list-unstyled">
+												<li class="mega-menu-item"><a href="">Client Success Stories</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link dropdown-toggle" id="insightsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Insights</a>
+									<div class="dropdown-menu mega-menu" aria-labelledby="insightsMenu">
+										<div class="menu-title">
+											<a href="#">Insights</a>
+										</div>
+										<div class="menu-block">
+											<ul class="list-unstyled">
+												<li class="mega-menu-item"><a href="">Blog</a></li>
+												<li class="mega-menu-item"><a href="#">Guides</a></li>
+												<li class="mega-menu-item"><a href="">Webinars</a></li>
+												<li class="mega-menu-item"><a href="">Events</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="utility-nav">
+							<ul>
+								<li>
+									<a href="#">about</a>
+								</li>
+								<li>
+									<a href="#">Investors</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</nav>
+
+		</div>
+	</div>
+</header>

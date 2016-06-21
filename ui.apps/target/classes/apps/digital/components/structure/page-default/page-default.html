@@ -1,0 +1,12 @@
+<!doctype html>
+<html class="no-js" lang="${pageHelper.pageLanguage}" data-sly-use.pageHelper="com.perficient.adobe.digital.core.sightly.PageHelper">
+  <head>
+    <meta data-sly-use.tmpl="partials/head.html" data-sly-call="${tmpl.head @ pageTitle=pageHelper.pageTitle, description=pageHelper.description, keywords=pageHelper.keywords}" data-sly-unwrap />
+    <link data-sly-use.tmpl="partials/headlibs.html" data-sly-call="${tmpl.headlibs}" data-sly-unwrap />
+  </head>
+  <body>
+    <section data-sly-use.tmpl="partials/main.html" data-sly-call="${tmpl.main @ pageTitle=pageHelper.pageTitle}" data-sly-unwrap></section>
+    <section data-sly-use.tmpl="partials/footer.html" data-sly-call="${tmpl.footer}" data-sly-unwrap></section>
+    <section data-sly-use.tmpl="partials/footlibs.html" data-sly-call="${tmpl.footlibs}" data-sly-unwrap></section>
+  </body>
+</html>

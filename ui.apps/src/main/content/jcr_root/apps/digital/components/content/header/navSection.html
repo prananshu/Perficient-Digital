@@ -1,0 +1,17 @@
+<template data-sly-template.navSection="${@ sectionLabel, sectionURL, sectionLinks}">
+<li class="nav-item">
+	<a href="${sectionURL}" class="nav-link dropdown-toggle" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${sectionLabel}
+	</a>
+	<div class="dropdown-menu mega-menu" aria-labelledby="servicesMenu">
+		<div class="menu-title">
+			<a href="${sectionURL}">${sectionLabel}</a>
+		</div>
+		<div class="menu-block">
+			<ul class="list-unstyled" data-sly-list.link="${sectionLinks}">
+  				<li class="mega-menu-item"><a href="${link.url}">${link.label}</a></li>
+			</ul>
+		</div>
+	</div>
+</li>
+</template>
