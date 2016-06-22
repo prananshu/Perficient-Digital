@@ -31,6 +31,10 @@
                     jcr:primaryType="cq:Widget"
                     path="/libs/foundation/components/page/tab_livecopy.infinity.json"
                     xtype="cqinclude"/>
+                <training
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/digital/components/structure/page/tab_training.infinity.json"
+                    xtype="cqinclude"/>
             </items>
         </tabs>
     </items>

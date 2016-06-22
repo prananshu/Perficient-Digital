@@ -27,11 +27,7 @@
                     name="./hideInNav"
                     type="checkbox"
                     xtype="selection"/>
-                <Author
-                    jcr:primaryType="cq:Widget"
-                    fieldLabel="Author"
-                    name="./jcr:author"
-                    xtype="textfield"/>
+                
             </items>
         </basic>
         <more_titles
@@ -124,5 +120,19 @@
                     xtype="selection"/>
             </items>
         </vanity>
+        <author
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                
+                <Author
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Author"
+                    name="./jcr:author"
+                    xtype="textfield"/>
+            </items>
+        </author>
     </items>
 </jcr:root>

@@ -7,6 +7,5 @@
     ranking="{Long}2">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="digital/components/structure/page-default-new">
-    </jcr:content>
+        sling:resourceType="digital/components/structure/page-default-new"/>
 </jcr:root>
