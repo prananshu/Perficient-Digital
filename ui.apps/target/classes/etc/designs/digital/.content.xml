@@ -4,6 +4,6 @@
     <jcr:content
         jcr:primaryType="nt:unstructured"
         jcr:title="Perficient Digital Design"
-        sling:resourceType="wcm/core/components/designer">
-    </jcr:content>
+        sling:resourceType="wcm/core/components/designer"/>
+    <clientlib/>
 </jcr:root>
