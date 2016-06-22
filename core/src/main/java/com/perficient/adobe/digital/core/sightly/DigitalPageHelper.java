@@ -8,7 +8,7 @@ import com.adobe.cq.sightly.WCMUse;
 import com.day.cq.tagging.Tag;
 import com.day.cq.wcm.api.Page;
 
-public class PageHelper extends WCMUse {
+public class DigitalPageHelper extends WCMUse {
 
 	/** The current page. */
     private Page currentPage;

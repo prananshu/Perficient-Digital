@@ -16,7 +16,7 @@
                     xtype="textfield"/>
                 <offTimeHint
                     jcr:primaryType="cq:Widget"
-                    ignoreData="{Boolean}true"
+                    fieldLabel="Date"
                     name="./jcr:date"
                     value="Date"
                     xtype="datefield"/>

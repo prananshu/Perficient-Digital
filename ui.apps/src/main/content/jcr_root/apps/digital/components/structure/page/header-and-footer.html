@@ -1,7 +1,7 @@
 <!doctype html>
-<html class="no-js" lang="${pageHelper.pageLanguage}" data-sly-use.pageHelper="com.perficient.adobe.digital.core.sightly.PageHelper">
+<html class="no-js" lang="${pageHelper.pageLanguage}" data-sly-use.pageHelper="com.perficient.adobe.digital.core.sightly.DigitalPageHelper">
   <head>
-    <meta data-sly-use.headtmpl="../page-default/partials/head.html" data-sly-call="${headtmpl.head @ pageTitle=pageHelper.pageTitle, description=pageHelper.description, keywords=pageHelper.keywords}" data-sly-unwrap />
+    <meta data-sly-use.headtmpl="../page-default/partials/head.html" data-sly-call="${headtmpl.head @ pageTitle=pageHelper.pageTitle, description=pageHelper.description, keywords=pageHelper.keywords, trainer=pageHelper.trainer, trainingDate=pageHelper.trainingDate, author=pageHelper.author}" data-sly-unwrap />
     <link data-sly-use.headlibstmpl="../page-default/partials/headlibs.html" data-sly-call="${headlibstmpl.headlibs}" data-sly-unwrap />
   </head>
   <body>
