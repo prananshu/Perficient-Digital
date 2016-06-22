@@ -27,7 +27,6 @@
                     name="./hideInNav"
                     type="checkbox"
                     xtype="selection"/>
-                
             </items>
         </basic>
         <more_titles
@@ -126,7 +125,6 @@
             collapsible="{Boolean}false"
             xtype="dialogfieldset">
             <items jcr:primaryType="cq:WidgetCollection">
-                
                 <Author
                     jcr:primaryType="cq:Widget"
                     fieldLabel="Author"
