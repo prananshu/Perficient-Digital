@@ -26,44 +26,31 @@
 
 <!-- End Contact Overlay-->
 
-<section class="footer-icons">
+<section class="footer-icons" data-sly-use.footerSocial="com.perficient.adobe.digital.core.sightly.components.FooterSocial">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<ul class="hidden-sm-down pull-left">
-					<sly data-sly-use.footer="com.perficient.adobe.digital.core.sightly.components.PDFooter">
 						<li>
-							<a href="${footer.logoURL}"> <img src=${footer.logoPath} alt="${footer.logoAltText}" /> </a>
+							<a href="${footerSocial.logoURL}"> <img src=${footerSocial.logoPath} alt="${footerSocial.logoAltText}" /> </a>
 						</li>
 						<!-- BEGIN FOOTER NAVIGATION -->
 	
 						<li>
-							<a href="${footer.privacyPolicyUrl}">${footer.privacyPolicyText}</a>
+							<a href="${footerSocial.privacyPolicyUrl}">${footerSocial.privacyPolicyText}</a>
 						</li>
 	
 						<!-- END FOOTER NAVIGATION -->
 						<li>
-							� ${footer.currentYear} Perficient, Inc. All Rights Reserved
+							� ${footerSocial.currentYear} Perficient, Inc. All Rights Reserved
 						</li>
-					<sly>
 				</ul>
 				<!-- Begin Footer Icons-->
 
 				<ul class="list-unstyled">
-					<li>
-						<a href='http://www.perficient.com/Thought-Leadership/Social-Media/Blogs'> <i class="fa fa-rss"></i> </a>
-					</li>
-					<li>
-						<a href='http://www.twitter.com/perficient'> <i class="fa fa-twitter"></i> </a>
-					</li>
-					<li>
-						<a href='http://www.facebook.com/Perficient'> <i class="fa fa-facebook-square"></i> </a>
-					</li>
-					<li>
-						<a href='http://linkedin.com/company/perficient'> <i class="fa fa-linkedin-square"></i> </a>
-					</li>
-					<li>
-						<a href='https://www.youtube.com/user/Perficient'> <i class="fa fa-youtube"></i> </a>
+				
+					<li data-sly-use.templ="socialIcons.html"
+						data-sly-call="${templ.socialIcons @ socialItems=footerSocial.socialItems}" data-sly-unwrap>
 					</li>
 				</ul>
 				<!-- End Footer Icons-->

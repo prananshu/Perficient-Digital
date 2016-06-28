@@ -6,7 +6,7 @@
   </head>
   <body>
     <section data-sly-use.tmpl="partials/main.html" data-sly-call="${tmpl.main @ pageTitle=pageHelper.pageTitle}" data-sly-unwrap></section>
-    <section data-sly-use.tmpl="partials/footersocial.html" data-sly-call="${tmpl.footersocial}" data-sly-unwrap></section>
+    <div data-sly-resource="${@ path='ipar', resourceType='foundation/components/iparsys'}" data-sly-unwrap ></div>
     <section data-sly-use.tmpl="partials/footlibs.html" data-sly-call="${tmpl.footlibs}" data-sly-unwrap></section>
   </body>
 </html>
