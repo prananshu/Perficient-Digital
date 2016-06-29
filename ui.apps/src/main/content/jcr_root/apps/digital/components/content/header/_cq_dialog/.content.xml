@@ -108,25 +108,233 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Navigation 2"
                         sling:resourceType="granite/ui/components/foundation/container">
-                        <items jcr:primaryType="nt:unstructured"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <section1Label
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter the label for the leftmost navigation menu item"
+                                fieldLabel="Section Label"
+                                name="./industriesLabel"
+                                required="{Boolean}true"/>
+                            <section1URL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Section URL"
+                                name="./industriesURL"
+                                required="{Boolean}true"
+                                rootPath="/content/digital"/>
+                            <navItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="What links should be shown on hover of first navigation item"
+                                fieldLabel="Navigation Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="JSON_STORE"
+                                    name="./industriesItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <label
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Label"
+                                                    name="./label"
+                                                    required="{Boolean}true"/>
+                                                <url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="URL"
+                                                    name="./url"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/digital"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </navItems>
+                        </items>
                     </Nav2>
                     <Nav3
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Navigation 3"
                         sling:resourceType="granite/ui/components/foundation/container">
-                        <items jcr:primaryType="nt:unstructured"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <partnersLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter the label for the leftmost navigation menu item"
+                                fieldLabel="Section Label"
+                                name="./partnersLabel"
+                                required="{Boolean}true"/>
+                            <partnersURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Section URL"
+                                name="./partnersURL"
+                                required="{Boolean}true"
+                                rootPath="/content/digital"/>
+                            <partnersItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="What links should be shown on hover of first navigation item"
+                                fieldLabel="Navigation Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="JSON_STORE"
+                                    name="./partnersItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <label
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Label"
+                                                    name="./label"
+                                                    required="{Boolean}true"/>
+                                                <url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="URL"
+                                                    name="./url"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/digital"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </partnersItems>
+                        </items>
                     </Nav3>
                     <Nav4
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Navigation 4"
                         sling:resourceType="granite/ui/components/foundation/container">
-                        <items jcr:primaryType="nt:unstructured"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <workLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter the label for the leftmost navigation menu item"
+                                fieldLabel="Section Label"
+                                name="./workLabel"
+                                required="{Boolean}true"/>
+                            <workURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Section URL"
+                                name="./workURL"
+                                required="{Boolean}true"
+                                rootPath="/content/digital"/>
+                            <workItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="What links should be shown on hover of first navigation item"
+                                fieldLabel="Navigation Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="JSON_STORE"
+                                    name="./workItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <label
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Label"
+                                                    name="./label"
+                                                    required="{Boolean}true"/>
+                                                <url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="URL"
+                                                    name="./url"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/digital"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </workItems>
+                        </items>
                     </Nav4>
                     <Nav5
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Navigation 5"
                         sling:resourceType="granite/ui/components/foundation/container">
-                        <items jcr:primaryType="nt:unstructured"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <insightLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter the label for the leftmost navigation menu item"
+                                fieldLabel="Section Label"
+                                name="./insightLabel"
+                                required="{Boolean}true"/>
+                            <insightURL
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Section URL"
+                                name="./insightURL"
+                                required="{Boolean}true"
+                                rootPath="/content/digital"/>
+                            <insightItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="What links should be shown on hover of first navigation item"
+                                fieldLabel="Navigation Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    acs-commons-nested="JSON_STORE"
+                                    name="./insightItems">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <label
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldLabel="Label"
+                                                    name="./label"
+                                                    required="{Boolean}true"/>
+                                                <url
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldLabel="URL"
+                                                    name="./url"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/digital"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </insightItems>
+                        </items>
                     </Nav5>
                     <UtilityNav
                         jcr:primaryType="nt:unstructured"

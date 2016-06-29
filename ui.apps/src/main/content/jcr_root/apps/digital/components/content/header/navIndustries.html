@@ -1,0 +1,17 @@
+<template data-sly-template.navIndustries="${@ industriesLabel, industriesURL, industriesLinks}">
+<li class="nav-item">
+	<a href="${industriesURL}" class="nav-link dropdown-toggle" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${industriesLabel}
+	</a>
+	<div class="dropdown-menu mega-menu" aria-labelledby="servicesMenu">
+		<div class="menu-title">
+			<a href="${industriesURL}">${industriesLabel}</a>
+		</div>
+		<div class="menu-block">
+			<ul class="list-unstyled" data-sly-list.link="${industriesLinks}">
+  				<li class="mega-menu-item"><a href="${link.url}">${link.label}</a></li>
+			</ul>
+		</div>
+	</div>
+</li>
+</template>

@@ -5,6 +5,8 @@
     jcr:title="Template for EC-51."
     allowedPaths="[/content(/.*)?]">
     <jcr:content
+        cq:designPath="/etc/designs/digital"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="digital/components/structure/ec-51-component"/>
+        sling:resourceType="digital/components/structure/ec-51-component"
+        pageTitle="EC 51"/>
 </jcr:root>

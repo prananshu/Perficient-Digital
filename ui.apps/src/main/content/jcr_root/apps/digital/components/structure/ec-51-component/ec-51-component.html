@@ -5,6 +5,7 @@
     <link data-sly-use.tmpl="partials/headlibs.html" data-sly-call="${tmpl.headlibs}" data-sly-unwrap />
   </head>
   <body>
+  	<div data-sly-resource="${@ path='iheader', resourceType='foundation/components/iparsys'}" data-sly-unwrap ></div>
     <section data-sly-use.tmpl="partials/main.html" data-sly-call="${tmpl.main @ pageTitle=pageHelper.pageTitle}" data-sly-unwrap></section>
     <div data-sly-resource="${@ path='ipar', resourceType='foundation/components/iparsys'}" data-sly-unwrap ></div>
     <section data-sly-use.tmpl="partials/footlibs.html" data-sly-call="${tmpl.footlibs}" data-sly-unwrap></section>
