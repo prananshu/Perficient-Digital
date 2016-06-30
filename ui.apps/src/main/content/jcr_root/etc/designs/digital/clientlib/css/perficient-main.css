@@ -273,13 +273,8 @@ body {
   margin-top: 70px;
   margin-bottom: 54px;
   -webkit-font-smoothing: antialiased;
-  -webkit-column-break-inside: avoid; }
-  @media (min-width: 48em) {
-    body {
-      margin-top: 12rem; } }
-  @media (min-width: 62em) {
-    body {
-      margin-top: 9rem; } }
+  -webkit-column-break-inside: avoid; 
+	margin:0;}
 
 section {
   position: relative; }
@@ -406,7 +401,6 @@ header {
   background: #fff;
   position: relative;
   z-index: 2000;
-  position: fixed;
   width: 100%;
   top: 0;
   margin-top: 0;

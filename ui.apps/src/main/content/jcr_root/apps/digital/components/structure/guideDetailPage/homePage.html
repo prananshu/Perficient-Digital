@@ -1,0 +1,13 @@
+<!doctype html>
+<html class="no-js" lang="${pageHelper.pageLanguage}" data-sly-use.pageHelper="com.perficient.adobe.digital.core.sightly.DigitalPageHelper">
+  <head>
+    <meta data-sly-use.headtmpl="head.html" data-sly-call="${headtmpl.head @ pageTitle=pageHelper.pageTitle, description=pageHelper.description, author=pageHelper.author, trainer=pageHelper.trainer, trainingDate=pageHelper.trainingDate}" data-sly-unwrap />
+    <link data-sly-use.headlibstmpl="../page-default/partials/headlibs.html" data-sly-call="${headlibstmpl.headlibs}" data-sly-unwrap />
+  </head>
+  <body>
+    <div data-sly-include="header.html"></div>
+    <section data-sly-resource="${'guideDetail' @ resourceType='digital/components/content/guide-detail'}" data-sly-unwrap="${wcmmode.disabled}"></section>    
+    <div data-sly-include="footer.html"></div>
+    <section data-sly-use.footlibstmpl="../page-default/partials/footlibs.html" data-sly-call="${footlibstmpl.footlibs}" data-sly-unwrap></section>
+  </body>
+</html>
