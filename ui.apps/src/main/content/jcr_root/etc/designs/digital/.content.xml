@@ -21,6 +21,15 @@
                 sling:resourceType="foundation/components/iparsys"
                 components="[/apps/digital/components/content/header]"/>
         </ec-51-component>
+        <contact-us-page jcr:primaryType="nt:unstructured">
+            <footerContactus
+                jcr:lastModified="{Date}2010-08-24T22:14:16.005+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Inheritance Paragraph System"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/digital/components/content/footer-social]"/>
+        </contact-us-page>
     </jcr:content>
     <clientlib/>
 </jcr:root>
