@@ -48,7 +48,7 @@
                     </General>
                     <Nav1
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Navigation 1"
+                        jcr:title="Services"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <section1Label
@@ -106,7 +106,7 @@
                     </Nav1>
                     <Nav2
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Navigation 2"
+                        jcr:title="Industries"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <section1Label
@@ -164,7 +164,7 @@
                     </Nav2>
                     <Nav3
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Navigation 3"
+                        jcr:title="Partners"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <partnersLabel
@@ -222,7 +222,7 @@
                     </Nav3>
                     <Nav4
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Navigation 4"
+                        jcr:title="Work"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <workLabel
@@ -280,7 +280,7 @@
                     </Nav4>
                     <Nav5
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Navigation 5"
+                        jcr:title="Insights"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <insightLabel
