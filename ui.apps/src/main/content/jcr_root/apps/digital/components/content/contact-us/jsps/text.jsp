@@ -21,11 +21,11 @@
 %>
 <cq:includeClientLib categories="cq.wcm.foundation.accessibility"/>
 <%
-    if (properties.get("text2",null) == null ){
+    if (properties.get("text",null) == null ){
         String showAltComponentName = request.getParameter("showAltComponentName");
         if(showAltComponentName!=null && showAltComponentName.equalsIgnoreCase("true")) { %>
             <h2 class="cq-paragraphreference-thumbnail-text"><%= resource.getName() %></h2>
         <%}
     }%>
-    <cq:text property="text2" escapeXml="true"
+    <cq:text property="text" escapeXml="true"
         placeholder="<%= Placeholder.getDefaultPlaceholder(slingRequest, component, null)%>"/>
