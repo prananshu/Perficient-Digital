@@ -93,15 +93,22 @@
                                     <title
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                        fieldDescription="Leave empty to use the page title."
+                                        fieldDescription="Contact us title"
                                         fieldLabel="Title"
-                                        name="./contactusTitle"/>
+                                        name="./contactusTitle"
+                                        required="{Boolean}true"/>
                                     <emailRecipents
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                        fieldDescription="Leave empty to use the page title."
+                                        fieldDescription="Email recipients"
                                         fieldLabel="Email Recipents (Comma Separated)"
                                         name="./emailRecipents"/>
+                                     <receiveEmailText
+		                                jcr:primaryType="nt:unstructured"
+		                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+		                                fieldLabel="Receive Mail Text"
+		                                name="./receiveMailText"
+		                                required="{Boolean}true"/>
                                 </items>
                             </title>
                         </items>

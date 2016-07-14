@@ -3,11 +3,11 @@
 		<meta charset="utf-8">
 		<meta content="" name="description">
 		<title></title>
-		<script type="text/javascript" src="http://cdn.pardot.com/pd.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MQTSQL"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="http://www2.perficient.com/l/9462/2016-04-26/7dg9yr/9462/141664/iframeResizer.contentWindow.js" type="application/javascript"></script>
-		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,800">
-        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
-	<script src="http://form-cdn.pardot.com/js/piUtils.js?ver=20130530" type="text/javascript"></script><script type="text/javascript">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="application/javascript" src="http://www2.perficient.com/l/9462/2016-04-26/7dg9yr/9462/141664/iframeResizer.contentWindow.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://form-cdn.pardot.com/js/piUtils.js?ver=20130530"></script><script type="text/javascript">
 piAId = '10462';
 piCId = '66037';
 if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) { pi['tracker'] = {}; } pi.tracker.pi_form = true;
@@ -232,7 +232,7 @@ if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) {
 	   }
 	}
 </style>
-<div data-sly-include="jsps/text.jsp"></div>
+
 		<form action="${currentNode.path}.data.html" method="post">
 
 <style type="text/css">
@@ -247,9 +247,10 @@ form.form p label { color: #000000; }
 
 	<div class="before-content">
 	<h1>${contactUs.contactTitle}</h1>
+	<div data-sly-include="jsps/text.jsp"></div>
 	<p class="caption"> <i class="required-statement">Indicates a required field.</i></p>
 
-	<p class="third-party">You will receive emails from Perficient about upcoming events and guides. We will never give your contact information to a third party.</p>
+	<p class="third-party">${contactUs.receiveMailText}</p>
 
 	</div>
 	<div class="form-content">
@@ -259,7 +260,7 @@ form.form p label { color: #000000; }
 					<label for="9462_299806pi_9462_299806" class="field-label">First Name</label>
 				
 				
-				<input type="text" onchange="" maxlength="40" size="30" class="text" value="" id="9462_299806pi_9462_299806" name="firstName">
+				<input type="text" onchange="" maxlength="40" size="30" class="text" value="" id="9462_299806pi_9462_299806" name="firstName" required>
 				
 			</p>
 			<div style="display:none" id="error_for_9462_299806pi_9462_299806"></div>
@@ -270,7 +271,7 @@ form.form p label { color: #000000; }
 					<label for="9462_299808pi_9462_299808" class="field-label">Last Name</label>
 				
 				
-				<input type="text" onchange="" maxlength="80" size="30" class="text" value="" id="9462_299808pi_9462_299808" name="lastName">
+				<input type="text" onchange="" maxlength="80" size="30" class="text" value="" id="9462_299808pi_9462_299808" name="lastName" required>
 				
 			</p>
 			<div style="display:none" id="error_for_9462_299808pi_9462_299808"></div>
@@ -281,7 +282,7 @@ form.form p label { color: #000000; }
 					<label for="9462_299810pi_9462_299810" class="field-label">Work Email</label>
 				
 				
-				<input type="text" onchange="piAjax.auditEmailField(this, 9462, 299810, 148728440);" maxlength="255" size="30" class="text" value="" id="9462_299810pi_9462_299810" name="workEmail">
+				<input type="email" onchange="piAjax.auditEmailField(this, 9462, 299810, 148728440);" maxlength="255" size="30" class="text" value="" id="9462_299810pi_9462_299810" name="workEmail" required>
 				
 			</p>
 			<div style="display:none" id="error_for_9462_299810pi_9462_299810"></div>
@@ -308,7 +309,7 @@ form.form p label { color: #000000; }
 					<label for="9462_299812pi_9462_299812" class="field-label">${formfields.additionalFieldLabel}</label>
 				
 				
-					<input type="text" onchange="" maxlength="40" size="30" class="text" value="" id="${formfields.additionalFieldLabel}" name="${formfields.additionalFieldLabel}">
+					<input type="text" onchange="" maxlength="40" size="30" class="text" value="" id="${formfields.additionalFieldLabel}" name="${formfields.additionalFieldLabel}" required>
 					
 					</p>
 					<div style="display:none" id="error_for_${formfields.additionalFieldLabel}"></div>
@@ -330,6 +331,20 @@ form.form p label { color: #000000; }
 	
 	
 <div class="thank you"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script>
 
 </div></sly>
 <input type="hidden" value="" id="hiddenDependentFields" name="hiddenDependentFields"></form>
@@ -363,4 +378,4 @@ form.form p label { color: #000000; }
 	
 
 <script type="text/javascript" id="">var errorsMsg=document.getElementsByClassName("errors");
-if(0&lt;errorsMsg.length){dataLayer.push({event:"errorCheck",errorsFound:"True"});var errorFields=document.getElementsByClassName("error"),errorsNotSet=[];for(i=0;i&lt;errorFields.length;i++)-1&lt;errorFields[i].className.indexOf("form-field")&amp;&amp;errorsNotSet.push(errorFields[i].children.item("label").textContent.trim());console.log(errorsNotSet);dataLayer.push({event:"Missing Fields Check",reqFieldsMissing:errorsNotSet.toString()})}else dataLayer.push({event:"errorCheck",errorsFound:"False"});</script><div style="clear: both; display: block;"></div></body></html>
+if(0<errorsMsg.length){dataLayer.push({event:"errorCheck",errorsFound:"True"});var errorFields=document.getElementsByClassName("error"),errorsNotSet=[];for(i=0;i<errorFields.length;i++)-1<errorFields[i].className.indexOf("form-field")&&errorsNotSet.push(errorFields[i].children.item("label").textContent.trim());console.log(errorsNotSet);dataLayer.push({event:"Missing Fields Check",reqFieldsMissing:errorsNotSet.toString()})}else dataLayer.push({event:"errorCheck",errorsFound:"False"});</script><div style="clear: both; display: block;"></div></body></html>

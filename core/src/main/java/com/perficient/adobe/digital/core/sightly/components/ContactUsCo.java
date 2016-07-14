@@ -13,8 +13,10 @@ public class ContactUsCo extends WCMUse{
 	private String emailRecepients;
 	private String caption;
 	private String contactTitle;
+	private String receiveMailText;
 	private List<Map<String, String>> formItems;
 	public static String ADD_FORM_FIELDS = "nav1Items";
+	public static String DEFAULT_RECEIVE_TEXT = "Receive email text....";
 	
 	@Override
 	public void activate() throws Exception {
@@ -22,6 +24,7 @@ public class ContactUsCo extends WCMUse{
 		setEmailRecepients(properties.get("emailRecipents",String.class));
 		setContactTitle(properties.get("contactusTitle",String.class));
 		setCaption(properties.get("text2",String.class));
+		setReceiveMailText(properties.get("receiveMailText",DEFAULT_RECEIVE_TEXT));
 		setFormItems(MultiFieldPanelFunctions.getMultiFieldPanelValues(getResource(),ADD_FORM_FIELDS));
 	}
 
@@ -55,6 +58,14 @@ public class ContactUsCo extends WCMUse{
 
 	public void setContactTitle(String contactTitle) {
 		this.contactTitle = contactTitle;
+	}
+
+	public String getReceiveMailText() {
+		return receiveMailText;
+	}
+
+	public void setReceiveMailText(String receiveMailText) {
+		this.receiveMailText = receiveMailText;
 	}
 	
 	
