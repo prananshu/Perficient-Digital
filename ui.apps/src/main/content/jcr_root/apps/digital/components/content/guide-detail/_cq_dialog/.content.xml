@@ -115,7 +115,7 @@
                     </text>
                     <image
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Image1 Properties"
+                        jcr:title="Image"
                         sling:resourceType="granite/ui/components/foundation/section">
                         <layout
                             jcr:primaryType="nt:unstructured"
