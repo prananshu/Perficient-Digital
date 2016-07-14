@@ -12,6 +12,7 @@ public class ContactUsCo extends WCMUse{
 
 	private String emailRecepients;
 	private String caption;
+	private String contactTitle;
 	private List<Map<String, String>> formItems;
 	public static String ADD_FORM_FIELDS = "nav1Items";
 	
@@ -19,6 +20,7 @@ public class ContactUsCo extends WCMUse{
 	public void activate() throws Exception {
 		ValueMap properties = getProperties();
 		setEmailRecepients(properties.get("emailRecipents",String.class));
+		setContactTitle(properties.get("contactusTitle",String.class));
 		setCaption(properties.get("text2",String.class));
 		setFormItems(MultiFieldPanelFunctions.getMultiFieldPanelValues(getResource(),ADD_FORM_FIELDS));
 	}
@@ -45,6 +47,14 @@ public class ContactUsCo extends WCMUse{
 
 	public void setCaption(String caption) {
 		this.caption = caption;
+	}
+
+	public String getContactTitle() {
+		return contactTitle;
+	}
+
+	public void setContactTitle(String contactTitle) {
+		this.contactTitle = contactTitle;
 	}
 	
 	
