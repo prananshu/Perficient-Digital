@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 
 import org.apache.felix.scr.annotations.Component;
@@ -18,11 +19,14 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.adobe.acs.commons.email.EmailService;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 import com.perficient.adobe.services.CustomerService;
+import com.perficient.adobe.services.EmailSchedulerImpl;
 
 
 @Component(metatype = true, label = "My Email Service", 
@@ -36,7 +40,7 @@ description = "Email service component")
     @Property(name = "sling.servlet.methods", value = "POST")
 })
 public class EmailServlet extends SlingAllMethodsServlet {
-	
+	private static final Logger LOGGER = LoggerFactory.getLogger(EmailServlet.class);
 
 	/* OSGi Service References */
 	@Reference
@@ -72,11 +76,27 @@ public class EmailServlet extends SlingAllMethodsServlet {
 		    }
 			
 			
+//			String resourcePath = pageNamePath+"/footerContactus/footer_social/contactUs";
+//			ResourceResolver resourceResolver = request.getResourceResolver();
+//			Resource res = resourceResolver.getResource(resourcePath);
+//			ValueMap properties = res.adaptTo(ValueMap.class);
+//			String rec = properties.get("emailRecipents", (String) null);
+		    
+		    ResourceResolver resourceResolver = request.getResourceResolver();
 			String resourcePath = pageNamePath+"/footerContactus/footer_social/contactUs";
-			ResourceResolver resourceResolver = request.getResourceResolver();
 			Resource res = resourceResolver.getResource(resourcePath);
-			ValueMap properties = res.adaptTo(ValueMap.class);
-			String rec = properties.get("emailRecipents", (String) null);
+			LOGGER.error("Resourse >>>>>",res);
+			String rec = "";
+			if(res!=null){
+				ValueMap properties = res.adaptTo(ValueMap.class);
+				rec = properties.get("emailRecipents", (String) null);	
+			}
+			else{
+				resourcePath = pageNamePath+"/footersocial/contactUs";
+				res = resourceResolver.getResource(resourcePath);
+				ValueMap properties = res.adaptTo(ValueMap.class);
+				rec = properties.get("emailRecipents", (String) null);
+			}
 
 		
         
@@ -101,9 +121,12 @@ public class EmailServlet extends SlingAllMethodsServlet {
 		
 		List<String> failureList = emailService.sendEmail(templatePath, emailParams, recipients);
 	
-	    response.setContentType("text/html");
-	    response.getOutputStream().println("hi hello!!!");
 	    
+	    
+	    response.sendRedirect("/content/digital/Thankyou.html");
+	    
+//	    RequestDispatcher dispatcher = request.getRequestDispatcher("/content/digital/Thankyou.html");
+//        dispatcher.forward(request, response);
 	    
 	    	
 	    
