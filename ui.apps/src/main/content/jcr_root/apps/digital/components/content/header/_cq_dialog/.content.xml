@@ -43,7 +43,7 @@
                                 name="./logoImageURL"
                                 placeholder="Defaults to homepage"
                                 required="{Boolean}true"
-                                rootPath="/content/dam"/>
+                                rootPath="/content/digital"/>
                         </items>
                     </General>
                     <Nav1

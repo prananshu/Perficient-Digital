@@ -1,12 +1,30 @@
-div.imageimagetext .image div.image {
-    float: left;
-    margin-bottom: 8px !important;
+div.guides-block {
+    margin-bottom: 20px;
 }
 
-div.imageimagetext .image_right div.image {
+
+div.guides-block .image div.image {
+    float: left;
+    margin-bottom: 8px !importantzz;
+}
+
+div.guides-block .image_right div.image {
     float: right !important;
 }
 
-div.imageimagetext div.text .cq-placeholder {
+div.guides-block div.text .cq-placeholder {
     height: 1.875rem;
+}
+
+div.keywords{
+
+    color:#cc1f20;
+    font-size:11px;
+}
+h1{
+    color: #3e3e3e;
+    display: block;
+    font-size: 4.6rem;
+    margin-top: 0;
+    padding: 0;
 }

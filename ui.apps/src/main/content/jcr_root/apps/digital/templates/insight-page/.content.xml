@@ -5,6 +5,7 @@
     jcr:title="T02 Insight Page"
     allowedPaths="[/content(/.*)?]">
     <jcr:content
+        cq:designPath="/etc/designs/digital"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="digital/components/structure/insightPage"/>
 </jcr:root>

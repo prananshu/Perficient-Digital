@@ -3,4 +3,4 @@
     jcr:description="Guide Detail Component"
     jcr:primaryType="cq:Component"
     jcr:title="Guide Detail"
-    componentGroup="Digital"/>
+    componentGroup=".hidden"/>
