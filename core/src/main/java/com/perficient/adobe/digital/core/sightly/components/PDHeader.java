@@ -172,7 +172,11 @@ public class PDHeader extends WCMUse {
 	}
 
 	//Component Property Defaults
-	public static String DEFAULT_NAV1_LABEL = "Services!!!";
+	public static String DEFAULT_NAV1_LABEL = "Services";
+	public static String DEFAULT_NAV2_LABEL = "Industries";
+	public static String DEFAULT_NAV3_LABEL = "Partners";
+	public static String DEFAULT_NAV4_LABEL = "Work";
+	public static String DEFAULT_NAV5_LABEL = "Insights";
 	public static String DEFAULT_NAV1_URL = "#";
 	
 	public String getSection1Label() {
@@ -207,19 +211,19 @@ public class PDHeader extends WCMUse {
 		setSection1URL(properties.get(NAV_1_URL_PROP,DEFAULT_NAV1_URL));
 		setNav1Items(MultiFieldPanelFunctions.getMultiFieldPanelValues(getResource(),NAV_1_ITEMS_PROP));
 		
-		setIndustriesLabel(properties.get(NAV_2_LABEL_PROP,DEFAULT_NAV1_LABEL));
+		setIndustriesLabel(properties.get(NAV_2_LABEL_PROP,DEFAULT_NAV2_LABEL));
 		setIndustriesURL(properties.get(NAV_2_URL_PROP,DEFAULT_NAV1_URL));
 		setIndustriesItems(MultiFieldPanelFunctions.getMultiFieldPanelValues(getResource(),NAV_2_ITEMS_PROP));
 		
-		setPartnersLabel(properties.get(NAV_3_LABEL_PROP,DEFAULT_NAV1_LABEL));
+		setPartnersLabel(properties.get(NAV_3_LABEL_PROP,DEFAULT_NAV3_LABEL));
 		setPartnersURL(properties.get(NAV_3_URL_PROP,DEFAULT_NAV1_URL));
 		setPartnersItems(MultiFieldPanelFunctions.getMultiFieldPanelValues(getResource(),NAV_3_ITEMS_PROP));
 		
-		setWorkLabel(properties.get(NAV_4_LABEL_PROP,DEFAULT_NAV1_LABEL));
+		setWorkLabel(properties.get(NAV_4_LABEL_PROP,DEFAULT_NAV4_LABEL));
 		setWorkURL(properties.get(NAV_4_URL_PROP,DEFAULT_NAV1_URL));
 		setWorkItems(MultiFieldPanelFunctions.getMultiFieldPanelValues(getResource(),NAV_4_ITEMS_PROP));
 		
-		setInsightLabel(properties.get(NAV_5_LABEL_PROP,DEFAULT_NAV1_LABEL));
+		setInsightLabel(properties.get(NAV_5_LABEL_PROP,DEFAULT_NAV5_LABEL));
 		setInsightURL(properties.get(NAV_5_URL_PROP,DEFAULT_NAV1_URL));
 		setInsightItems(MultiFieldPanelFunctions.getMultiFieldPanelValues(getResource(),NAV_5_ITEMS_PROP));
 		

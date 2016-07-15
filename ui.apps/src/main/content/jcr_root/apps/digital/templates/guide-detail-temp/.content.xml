@@ -5,6 +5,8 @@
     jcr:title="Guide Detail Template"
     allowedPaths="[/content(/.*)?]">
     <jcr:content
+        cq:designPath="/etc/designs/digital"
+        cq:tags="[marketing,operations]"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="digital/components/structure/guideDetailPage"/>
 </jcr:root>

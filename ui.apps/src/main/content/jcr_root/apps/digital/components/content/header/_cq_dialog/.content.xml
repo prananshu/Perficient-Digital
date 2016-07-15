@@ -28,7 +28,7 @@
                                 fieldLabel="Logo Image"
                                 name="./logoImage"
                                 required="{Boolean}true"
-                                rootPath="/content/dam"/>
+                                rootPath="/content/dam/digital"/>
                             <altText
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
