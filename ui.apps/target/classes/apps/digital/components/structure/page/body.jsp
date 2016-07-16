@@ -3,6 +3,6 @@
 <body>
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
     <div class="bg" id="main_bg">
-        <cq:include script="header-and-footer.html"/>
+        <cq:include script="homepage.html"/>
     </div>
 </body>
