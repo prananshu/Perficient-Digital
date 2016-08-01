@@ -48,6 +48,33 @@ public class PageHelper extends WCMUse {
     }
     
     /**
+     * Gets the trainer name.
+     *
+     * @return the trainer name
+     */
+     public String getTrainer() {
+       return getPageProperties().get("jcr:trainer", StringUtils.EMPTY);
+     }
+    
+     /**
+      * Gets the training date.
+      *
+      * @return the training date
+      */
+      public String getTrainingDate() {
+        return getPageProperties().get("jcr:date", StringUtils.EMPTY);
+      }
+      
+      /**
+       * Gets the author name.
+       *
+       * @return the author name
+       */
+       public String getAuthor() {
+         return getPageProperties().get("jcr:author", StringUtils.EMPTY);
+       }
+      
+    /**
      * Gets the keywords.
      *
      * @return the keywords

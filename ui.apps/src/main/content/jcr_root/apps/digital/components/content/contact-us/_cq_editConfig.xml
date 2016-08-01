@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:actions="[edit]"
+    cq:dialogMode="floating"
+    cq:layout="editbar"
+    jcr:primaryType="cq:EditConfig">
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        afteredit="REFRESH_PAGE"/>
+    <cq:inplaceEditing
+        jcr:primaryType="cq:InplaceEditingConfig"
+        active="{Boolean}true"
+        editorType="text">
+        <config jcr:primaryType="nt:unstructured">
+            <rtePlugins jcr:primaryType="nt:unstructured">
+                <undo
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <subsuperscript
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <paraformat jcr:primaryType="nt:unstructured">
+                    <format jcr:primaryType="nt:unstructured">
+                        <p
+                            jcr:primaryType="nt:unstructured"
+                            description="This is my Paragraph"
+                            tag="p"/>
+                        <h1
+                            jcr:primaryType="nt:unstructured"
+                            description="Header 1"
+                            tag="h1"/>
+                        <h2
+                            jcr:primaryType="nt:unstructured"
+                            description="Header 2"
+                            tag="h2"/>
+                        <h3
+                            jcr:primaryType="nt:unstructured"
+                            description="Header 3"
+                            tag="h3"/>
+                    </format>
+                </paraformat>
+                <misctools
+                    jcr:primaryType="nt:unstructured"
+                    features="*">
+                    <specialCharsConfig jcr:primaryType="nt:unstructured">
+                        <chars jcr:primaryType="nt:unstructured">
+                            <pound
+                                jcr:primaryType="nt:unstructured"
+                                entity="&amp;#163"/>
+                            <nbsp
+                                jcr:primaryType="nt:unstructured"
+                                entity="&amp;#160"/>
+                            <registered
+                                jcr:primaryType="nt:unstructured"
+                                entity="&amp;#174"/>
+                            <copyright
+                                jcr:primaryType="nt:unstructured"
+                                entity="&amp;#169"/>
+                            <trademark
+                                jcr:primaryType="nt:unstructured"
+                                entity="&amp;#8482"/>
+                            <emDash
+                                jcr:primaryType="nt:unstructured"
+                                entity="&amp;#8212"/>
+                        </chars>
+                    </specialCharsConfig>
+                </misctools>
+                <edit
+                    jcr:primaryType="nt:unstructured"
+                    defaultPasteMode="plaintext"
+                    features="*"
+                    stripHtmlTags="{Boolean}true"/>
+                <spellcheck
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <findreplace
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <styles
+                    jcr:primaryType="nt:unstructured"
+                    features="*">
+                    <styles jcr:primaryType="nt:unstructured">
+                        <plainSpan
+                            jcr:primaryType="nt:unstructured"
+                            cssName="defaultSpan"
+                            text="Default"/>
+                        <strikethrough
+                            jcr:primaryType="nt:unstructured"
+                            cssName="Strike Through"
+                            text="strikethrough"/>
+                    </styles>
+                </styles>
+            </rtePlugins>
+        </config>
+    </cq:inplaceEditing>
+</jcr:root>

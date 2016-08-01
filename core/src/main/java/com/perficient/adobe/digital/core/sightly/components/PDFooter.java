@@ -16,7 +16,7 @@ public class PDFooter extends WCMUse{
 	private String privacyPolicyUrl;
 	
 	//Default values
-	public static String DEFAULT_SLOGAN = "Default Slogan";
+	public static String DEFAULT_SLOGAN = "Default Slogan123";
 	public static String DEFAULT_LOGOPATH = "../../../../../etc/designs/digital/clientlib/img/perficient-logo-grey.png";
 	public static String DEFAULT_LOGOURL = "#";
 	public static String DEFAULT_PRIVACY_POLICY_TEXT = "Default Privacy Policy Text";

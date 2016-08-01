@@ -1,0 +1,12 @@
+div.hero-services {
+    margin-bottom: 20px;
+    width:100%;
+    overflow: hidden;
+}
+
+div.hero-services img {
+    display: block;
+}
+div.hero-services small {
+    display: block;
+}

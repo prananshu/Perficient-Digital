@@ -1,0 +1,17 @@
+<template data-sly-template.navWork="${@ workLabel, workURL, workLinks}">
+<li class="nav-item">
+	<a href="${workURL}" class="nav-link dropdown-toggle" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${workLabel}
+	</a>
+	<div class="dropdown-menu mega-menu" aria-labelledby="servicesMenu">
+		<div class="menu-title">
+			<a href="${workURL}">${workLabel}</a>
+		</div>
+		<div class="menu-block">
+			<ul class="list-unstyled" data-sly-list.link="${workLinks}">
+  				<li class="mega-menu-item"><a href="${link.url}">${link.label}</a></li>
+			</ul>
+		</div>
+	</div>
+</li>
+</template>

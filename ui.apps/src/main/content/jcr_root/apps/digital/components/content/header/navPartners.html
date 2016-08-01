@@ -1,0 +1,17 @@
+<template data-sly-template.navPartners="${@ partnersLabel, partnersURL, partnersLinks}">
+<li class="nav-item">
+	<a href="${partnersURL}" class="nav-link dropdown-toggle" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${partnersLabel}
+	</a>
+	<div class="dropdown-menu mega-menu" aria-labelledby="servicesMenu">
+		<div class="menu-title">
+			<a href="${partnersURL}">${partnersLabel}</a>
+		</div>
+		<div class="menu-block">
+			<ul class="list-unstyled" data-sly-list.link="${partnersLinks}">
+  				<li class="mega-menu-item"><a href="${link.url}">${link.label}</a></li>
+			</ul>
+		</div>
+	</div>
+</li>
+</template>

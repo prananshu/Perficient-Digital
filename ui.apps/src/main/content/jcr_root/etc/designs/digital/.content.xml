@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
+    <_x002e_vlt6841593353967509191.tmp/>
     <jcr:content
+        cq:lastModified="{Date}2016-07-15T16:02:32.864+05:30"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="Perficient Digital Design"
         sling:resourceType="wcm/core/components/designer">
+        <ec-51-component jcr:primaryType="nt:unstructured">
+            <footerContactus
+                jcr:lastModified="{Date}2010-08-24T22:14:16.005+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Inheritance Paragraph System"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/digital/components/content/footer-social]"/>
+        </ec-51-component>
+        <contact-us-page jcr:primaryType="nt:unstructured">
+            <footerContactus
+                jcr:lastModified="{Date}2010-08-24T22:14:16.005+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Inheritance Paragraph System"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/digital/components/content/footer-social]"/>
+        </contact-us-page>
+        <guideDetailPage jcr:primaryType="nt:unstructured">
+            <footerContactus
+                jcr:lastModified="{Date}2010-08-24T22:14:16.005+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Inheritance Paragraph System"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/digital/components/content/footer-social]"/>
+        </guideDetailPage>
+        <insightPage jcr:primaryType="nt:unstructured">
+            <footerContactus
+                jcr:lastModified="{Date}2010-08-24T22:14:16.005+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Inheritance Paragraph System"
+                sling:resourceType="foundation/components/iparsys"
+                components="[/apps/digital/components/content/footer-social]"/>
+            <par
+                jcr:lastModified="{Date}2016-07-15T16:02:32.862+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="[/apps/digital/components/content/guide-detail,/apps/digital/components/content/footer-social]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </insightPage>
     </jcr:content>
+    <clientlib/>
 </jcr:root>

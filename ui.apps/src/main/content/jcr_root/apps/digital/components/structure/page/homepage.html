@@ -1,0 +1,16 @@
+<!doctype html>
+<html class="no-js" lang="${pageHelper.pageLanguage}" data-sly-use.pageHelper="com.perficient.adobe.digital.core.sightly.DigitalPageHelper">
+  <head>
+    <meta data-sly-use.headtmpl="../page-default/partials/head.html" data-sly-call="${headtmpl.head @ pageTitle=pageHelper.pageTitle, description=pageHelper.description, keywords=pageHelper.keywords, trainer=pageHelper.trainer, trainingDate=pageHelper.trainingDate, author=pageHelper.author}" data-sly-unwrap />
+    <link data-sly-use.headlibstmpl="../page-default/partials/headlibs.html" data-sly-call="${headlibstmpl.headlibs}" data-sly-unwrap />
+  </head>
+  <body>
+    <div data-sly-include="header.html"></div>
+    <section data-sly-use.tmpl="heroBlock.html" data-sly-call="${tmpl.heroBlock}" data-sly-unwrap></section>
+    <div data-sly-include="content.jsp"></div> 
+    <section data-sly-use.tmpl="heroTab.html" data-sly-call="${tmpl.heroTab}" data-sly-unwrap></section>
+    <section data-sly-use.tmpl="heroJumbo.html" data-sly-call="${tmpl.heroJumbo}" data-sly-unwrap></section>
+    <div data-sly-include="footer.html"></div>
+    <section data-sly-use.footlibstmpl="../page-default/partials/footlibs.html" data-sly-call="${footlibstmpl.footlibs}" data-sly-unwrap></section>
+  </body>
+</html>
