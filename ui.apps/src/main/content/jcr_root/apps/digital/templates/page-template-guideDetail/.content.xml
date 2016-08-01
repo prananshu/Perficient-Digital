@@ -3,7 +3,7 @@
     jcr:description="Guide Detail Page Template "
     jcr:primaryType="cq:Template"
     jcr:title="Guide Detail Page Template "
-    allowedPaths="[/content/digital(/.*)?]"
+    allowedPaths="[/content/geometrixx(/.*)?]"
     ranking="{Long}1">
     <jcr:content
         jcr:primaryType="cq:PageContent"

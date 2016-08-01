@@ -8,7 +8,8 @@
     <div data-sly-include="header.html"></div>
     <section data-sly-use.tmpl="heroBlock.html" data-sly-call="${tmpl.heroBlock}" data-sly-unwrap></section>
     <div data-sly-include="content.jsp"></div> 
-    <section data-sly-use.tmpl="../heroTab.html" data-sly-call="${tmpl.heroTab}" data-sly-unwrap></section>
+    <section data-sly-use.tmpl="heroTab.html" data-sly-call="${tmpl.heroTab}" data-sly-unwrap></section>
+    <section data-sly-use.tmpl="heroJumbo.html" data-sly-call="${tmpl.heroJumbo}" data-sly-unwrap></section>
     <div data-sly-include="footer.html"></div>
     <section data-sly-use.footlibstmpl="../page-default/partials/footlibs.html" data-sly-call="${footlibstmpl.footlibs}" data-sly-unwrap></section>
   </body>

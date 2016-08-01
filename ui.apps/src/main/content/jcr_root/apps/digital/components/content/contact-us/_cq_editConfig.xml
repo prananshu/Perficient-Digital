@@ -13,6 +13,9 @@
         editorType="text">
         <config jcr:primaryType="nt:unstructured">
             <rtePlugins jcr:primaryType="nt:unstructured">
+                <undo
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
                 <subsuperscript
                     jcr:primaryType="nt:unstructured"
                     features="*"/>

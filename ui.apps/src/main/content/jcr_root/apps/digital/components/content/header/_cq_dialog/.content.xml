@@ -25,7 +25,7 @@
                             <logo
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                fieldLabel="Logo Image"
+                                fieldLabel="Logo Image*"
                                 name="./logoImage"
                                 required="{Boolean}true"
                                 rootPath="/content/dam/digital"/>
@@ -33,13 +33,13 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldDescription="Enter the subject of the image. If the image is a link, enter the link's page title."
-                                fieldLabel="Image Alt Text"
+                                fieldLabel="Image Alt Text*"
                                 name="./logoAltText"
                                 required="{Boolean}true"/>
                             <logoURL
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                fieldLabel="Logo URL"
+                                fieldLabel="Logo URL*"
                                 name="./logoImageURL"
                                 placeholder="Defaults to homepage"
                                 required="{Boolean}true"
@@ -55,13 +55,13 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldDescription="Enter the label for the leftmost navigation menu item"
-                                fieldLabel="Section Label"
+                                fieldLabel="Section Label*"
                                 name="./section1label"
                                 required="{Boolean}true"/>
                             <section1URL
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                fieldLabel="Section URL"
+                                fieldLabel="Section URL*"
                                 name="./section1URL"
                                 required="{Boolean}true"
                                 rootPath="/content/digital"/>
@@ -87,13 +87,13 @@
                                                 <label
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                    fieldLabel="Label"
+                                                    fieldLabel="Label*"
                                                     name="./label"
                                                     required="{Boolean}true"/>
                                                 <url
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                    fieldLabel="URL"
+                                                    fieldLabel="URL*"
                                                     name="./url"
                                                     required="{Boolean}true"
                                                     rootPath="/content/digital"/>
@@ -113,13 +113,13 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldDescription="Enter the label for the leftmost navigation menu item"
-                                fieldLabel="Section Label"
+                                fieldLabel="Section Label*"
                                 name="./industriesLabel"
                                 required="{Boolean}true"/>
                             <section1URL
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                fieldLabel="Section URL"
+                                fieldLabel="Section URL*"
                                 name="./industriesURL"
                                 required="{Boolean}true"
                                 rootPath="/content/digital"/>
@@ -145,13 +145,13 @@
                                                 <label
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                    fieldLabel="Label"
+                                                    fieldLabel="Label*"
                                                     name="./label"
                                                     required="{Boolean}true"/>
                                                 <url
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                    fieldLabel="URL"
+                                                    fieldLabel="URL*"
                                                     name="./url"
                                                     required="{Boolean}true"
                                                     rootPath="/content/digital"/>
@@ -171,13 +171,13 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldDescription="Enter the label for the leftmost navigation menu item"
-                                fieldLabel="Section Label"
+                                fieldLabel="Section Label*"
                                 name="./partnersLabel"
                                 required="{Boolean}true"/>
                             <partnersURL
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                fieldLabel="Section URL"
+                                fieldLabel="Section URL*"
                                 name="./partnersURL"
                                 required="{Boolean}true"
                                 rootPath="/content/digital"/>
@@ -203,13 +203,13 @@
                                                 <label
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                    fieldLabel="Label"
+                                                    fieldLabel="Label*"
                                                     name="./label"
                                                     required="{Boolean}true"/>
                                                 <url
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                    fieldLabel="URL"
+                                                    fieldLabel="URL*"
                                                     name="./url"
                                                     required="{Boolean}true"
                                                     rootPath="/content/digital"/>
@@ -229,13 +229,13 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldDescription="Enter the label for the leftmost navigation menu item"
-                                fieldLabel="Section Label"
+                                fieldLabel="Section Label*"
                                 name="./workLabel"
                                 required="{Boolean}true"/>
                             <workURL
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                fieldLabel="Section URL"
+                                fieldLabel="Section URL*"
                                 name="./workURL"
                                 required="{Boolean}true"
                                 rootPath="/content/digital"/>
@@ -261,13 +261,13 @@
                                                 <label
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                    fieldLabel="Label"
+                                                    fieldLabel="Label*"
                                                     name="./label"
                                                     required="{Boolean}true"/>
                                                 <url
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                    fieldLabel="URL"
+                                                    fieldLabel="URL*"
                                                     name="./url"
                                                     required="{Boolean}true"
                                                     rootPath="/content/digital"/>
@@ -287,13 +287,13 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldDescription="Enter the label for the leftmost navigation menu item"
-                                fieldLabel="Section Label"
+                                fieldLabel="Section Label*"
                                 name="./insightLabel"
                                 required="{Boolean}true"/>
                             <insightURL
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                fieldLabel="Section URL"
+                                fieldLabel="Section URL*"
                                 name="./insightURL"
                                 required="{Boolean}true"
                                 rootPath="/content/digital"/>
@@ -319,13 +319,13 @@
                                                 <label
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                    fieldLabel="Label"
+                                                    fieldLabel="Label*"
                                                     name="./label"
                                                     required="{Boolean}true"/>
                                                 <url
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                    fieldLabel="URL"
+                                                    fieldLabel="URL*"
                                                     name="./url"
                                                     required="{Boolean}true"
                                                     rootPath="/content/digital"/>
@@ -363,13 +363,13 @@
                                                 <label
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                    fieldLabel="Label"
+                                                    fieldLabel="Label*"
                                                     name="./label"
                                                     required="{Boolean}true"/>
                                                 <url
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                                    fieldLabel="URL"
+                                                    fieldLabel="URL*"
                                                     name="./url"
                                                     required="{Boolean}true"
                                                     rootPath="/content/digital"/>

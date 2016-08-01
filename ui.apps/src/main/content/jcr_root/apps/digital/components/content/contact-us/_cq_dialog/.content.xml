@@ -94,21 +94,22 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/textfield"
                                         fieldDescription="Contact us title"
-                                        fieldLabel="Title"
+                                        fieldLabel="Title*"
                                         name="./contactusTitle"
                                         required="{Boolean}true"/>
                                     <emailRecipents
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/textfield"
                                         fieldDescription="Email recipients"
-                                        fieldLabel="Email Recipents (Comma Separated)"
-                                        name="./emailRecipents"/>
-                                     <receiveEmailText
-		                                jcr:primaryType="nt:unstructured"
-		                                sling:resourceType="granite/ui/components/foundation/form/textarea"
-		                                fieldLabel="Receive Mail Text"
-		                                name="./receiveMailText"
-		                                required="{Boolean}true"/>
+                                        fieldLabel="Email Recipents* (Comma Separated)"
+                                        name="./emailRecipents"
+                                        required="{Boolean}true"/>
+                                    <receiveEmailText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                        fieldLabel="Receive Mail Text*"
+                                        name="./receiveMailText"
+                                        required="{Boolean}true"/>
                                 </items>
                             </title>
                         </items>

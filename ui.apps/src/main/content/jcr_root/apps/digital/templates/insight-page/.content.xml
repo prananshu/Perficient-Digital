@@ -3,7 +3,7 @@
     jcr:description="This is Insight page template for Perficient Digital site."
     jcr:primaryType="cq:Template"
     jcr:title="T02 Insight Page"
-    allowedPaths="[/content(/.*)?]">
+    allowedPaths="[/content/digital(/.*)?]">
     <jcr:content
         cq:designPath="/etc/designs/digital"
         jcr:primaryType="cq:PageContent"

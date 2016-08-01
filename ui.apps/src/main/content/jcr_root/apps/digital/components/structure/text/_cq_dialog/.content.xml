@@ -32,7 +32,7 @@
                                     <text
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                                        name="./textBlk"
+                                        name="./text"
                                         useFixedInlineToolbar="{Boolean}true">
                                         <rtePlugins jcr:primaryType="nt:unstructured">
                                             <format
